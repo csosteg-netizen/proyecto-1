@@ -28,7 +28,13 @@ public class mantenimiento_vehiculos {
                 
          int año = entrada.nextInt();
          
-         int kilometraje_Actual  = entrada.nextInt();
+         int kilometrajeActual  = entrada.nextInt();
+         
+         int intervaloMantenimiento = 5000;
+         
+         int KilometrajeUltimoMantenimiento = entrada.nextInt();
+         
+         int kilometrajeRecorrido = kilometrajeActual - KilometrajeUltimoMantenimiento ;
                  
       //Ingresar datos vehiculo
                  System.out.println("Ingrese la marca del vehiculo:");
@@ -41,7 +47,11 @@ public class mantenimiento_vehiculos {
         System.out.println("El modelo es:" + modelo);
         System.out.println("El tipo es :" + tipo);
         System.out.println("El año es:" + año);
-        System.out.println("El kilometraje es:" + kilometraje_Actual);
+        System.out.println("El kilometraje actual es:" + kilometrajeActual + "km");
+        System.out.println("El kilometraje anterior es:" + KilometrajeUltimoMantenimiento + "km");
+        System.out.println("El intervalo recomendado de mantenimiento es cada:" + intervaloMantenimiento +"km");
+        System.out.println("El kilometraje recorrido desde el ultimo matenimiento es:" + kilometrajeRecorrido +"km");  
+        
     
     }
     
